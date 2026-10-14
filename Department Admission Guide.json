@@ -1,0 +1,89 @@
+{
+  "name": "Department Admission Guide.",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.5,
+      "position": [
+        0,
+        0
+      ],
+      "id": "4ed1e02b-2386-45f5-a2be-48ba4b88cddf",
+      "name": "When chat message received",
+      "webhookId": "bc1d262b-3bd5-4aed-ab26-e6eb74711268"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        224,
+        0
+      ],
+      "id": "db6ccb80-9a62-4256-9ca3-9906912aba2b",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1.2,
+      "position": [
+        96,
+        176
+      ],
+      "id": "3accff16-73cb-4f4a-aed6-e057e392059d",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "i4bqsCDaOyBagXH6",
+          "name": "Google Gemini(PaLM) Api account 2"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "c874b0f7-adc9-4fb1-97da-dfe7693667f1",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "5c9f466065e06921d1ca8b3f26d5ae1baeaacf2076d6b43572a986afaf8de612"
+  },
+  "nodeGroups": [],
+  "id": "dUbqvaUS3VOcFIcp",
+  "tags": []
+}
