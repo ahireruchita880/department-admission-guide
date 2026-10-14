@@ -32,4 +32,6 @@ Students should verify important admission details, fees, and deadlines through 
 
 Try the Department Admission Guide here:
 
-**[Open Department Admission Guide Chatbot](PASTE-YOUR-LIVE-CHAT-URL-HERE)**
+**[Open Department Admission Guide Chatbot]
+https://ahireruchita.app.n8n.cloud/workflow/dUbqvaUS3VOcFIcp
+https://ahireruchita.app.n8n.cloud/webhook/bc1d262b-3bd5-4aed-ab26-e6eb74711268/chat
