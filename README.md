@@ -27,3 +27,9 @@ Chat Trigger → AI Agent → Google Gemini Chat Model
 
 ## Note
 Students should verify important admission details, fees, and deadlines through official college sources.
+
+## Live Chatbot
+
+Try the Department Admission Guide here:
+
+**[Open Department Admission Guide Chatbot](PASTE-YOUR-LIVE-CHAT-URL-HERE)**
